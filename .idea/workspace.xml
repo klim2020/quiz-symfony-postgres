@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b061e830-0e8d-44ee-a036-c5c296a60f50" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1642415649837</updated>
-      <workItem from="1642415652407" duration="3924000" />
+      <workItem from="1642415652407" duration="4304000" />
     </task>
     <task id="LOCAL-00001" summary="preperations">
       <created>1642417179629</created>
@@ -73,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642417905272</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add Enteties(Export and Address) and fill with dummy data &#10;composer require --dev orm-fixtures -fixtures&#10; &#10;composer require fzaninotto/faker - for dummy data &#10;&#10;https://github.com/fzaninotto/Faker&#10;Changing App/fixtures/AppFixtures.php&#10;Loading Fixtures int DB  php bin/console doctrine:fixtures:load">
+      <created>1642419799811</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642419799811</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +85,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="preperations" />
     <MESSAGE value="added 2 Enteties&#10;&#10; Class name of the entity to create or update (e.g. OrangePizza):&#10; &gt; Export&#10;&#10; created: src/Entity/Export.php&#10; created: src/Repository/ExportRepository.php&#10; &#10; Entity generated! Now let's add some fields!&#10; You can always add more fields later manually or by re-running this command.&#10;&#10; New property name (press &lt;return&gt; to stop adding fields):&#10; &gt; Name&#10;&#10; Field type (enter ? to see all types) [string]:&#10; &gt; &#10;&#10; Field length [255]:&#10; &gt; &#10;&#10; Can this field be null in the database (nullable) (yes/no) [no]:&#10; &gt; no&#10;&#10; updated: src/Entity/Export.php&#10;&#10; Add another property? Enter the property name (or press &lt;return&gt; to stop adding fields):&#10; &gt; Data&#10;&#10; Field type (enter ? to see all types) [string]:&#10; &gt; date&#10;&#10; Can this field be null in the database (nullable) (yes/no) [no]:&#10; &gt; no&#10;&#10; updated: src/Entity/Export.php&#10;&#10; Add another property? Enter the property name (or press &lt;return&gt; to stop adding fields):&#10; &gt; Time&#10;&#10; Field type (enter ? to see all types) [string]:&#10; &gt; time&#10;&#10; Can this field be null in the database (nullable) (yes/no) [no]:&#10; &gt; no&#10;&#10; updated: src/Entity/Export.php&#10;&#10; Add another property? Enter the property name (or press &lt;return&gt; to stop adding fields):&#10; &gt; DeliveryName&#10;&#10; Field type (enter ? to see all types) [string]:&#10; &gt; &#10;&#10; Field length [255]:&#10; &gt; &#10;&#10; Can this field be null in the database (nullable) (yes/no) [no]:&#10; &gt; no&#10;&#10; updated: src/Entity/Export.php&#10;&#10; Add another property? Enter the property name (or press &lt;return&gt; to stop adding fields):&#10; &gt; Location&#10;&#10; Field type (enter ? to see all types) [string]:&#10; &gt; ManyToOne&#10;&#10; What class should this entity be related to?:&#10; &gt; Location&#10;&#10; Is the Export.Location property allowed to be null (nullable)? (yes/no) [yes]:&#10; &gt; no&#10;&#10; Do you want to add a new property to Location so that you can access/update Export objects from it - e.g. $location-&gt;getExports()? (yes/no) [yes]:&#10; &gt; no&#10;&#10; updated: src/Entity/Export.php&#10;&#10; Add another property? Enter the property name (or press &lt;return&gt; to stop adding fields):&#10; &gt; &#10;&#10;&#10;           &#10;  Success! &#10;           &#10;&#10; Next: When you're ready, create a migration with php bin/console make:migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="added 2 Enteties&#10;&#10; Class name of the entity to create or update (e.g. OrangePizza):&#10; &gt; Export&#10;&#10; created: src/Entity/Export.php&#10; created: src/Repository/ExportRepository.php&#10; &#10; Entity generated! Now let's add some fields!&#10; You can always add more fields later manually or by re-running this command.&#10;&#10; New property name (press &lt;return&gt; to stop adding fields):&#10; &gt; Name&#10;&#10; Field type (enter ? to see all types) [string]:&#10; &gt; &#10;&#10; Field length [255]:&#10; &gt; &#10;&#10; Can this field be null in the database (nullable) (yes/no) [no]:&#10; &gt; no&#10;&#10; updated: src/Entity/Export.php&#10;&#10; Add another property? Enter the property name (or press &lt;return&gt; to stop adding fields):&#10; &gt; Data&#10;&#10; Field type (enter ? to see all types) [string]:&#10; &gt; date&#10;&#10; Can this field be null in the database (nullable) (yes/no) [no]:&#10; &gt; no&#10;&#10; updated: src/Entity/Export.php&#10;&#10; Add another property? Enter the property name (or press &lt;return&gt; to stop adding fields):&#10; &gt; Time&#10;&#10; Field type (enter ? to see all types) [string]:&#10; &gt; time&#10;&#10; Can this field be null in the database (nullable) (yes/no) [no]:&#10; &gt; no&#10;&#10; updated: src/Entity/Export.php&#10;&#10; Add another property? Enter the property name (or press &lt;return&gt; to stop adding fields):&#10; &gt; DeliveryName&#10;&#10; Field type (enter ? to see all types) [string]:&#10; &gt; &#10;&#10; Field length [255]:&#10; &gt; &#10;&#10; Can this field be null in the database (nullable) (yes/no) [no]:&#10; &gt; no&#10;&#10; updated: src/Entity/Export.php&#10;&#10; Add another property? Enter the property name (or press &lt;return&gt; to stop adding fields):&#10; &gt; Location&#10;&#10; Field type (enter ? to see all types) [string]:&#10; &gt; ManyToOne&#10;&#10; What class should this entity be related to?:&#10; &gt; Location&#10;&#10; Is the Export.Location property allowed to be null (nullable)? (yes/no) [yes]:&#10; &gt; no&#10;&#10; Do you want to add a new property to Location so that you can access/update Export objects from it - e.g. $location-&gt;getExports()? (yes/no) [yes]:&#10; &gt; no&#10;&#10; updated: src/Entity/Export.php&#10;&#10; Add another property? Enter the property name (or press &lt;return&gt; to stop adding fields):&#10; &gt; &#10;&#10;&#10;           &#10;  Success! &#10;           &#10;&#10; Next: When you're ready, create a migration with php bin/console make:migration" />
+    <MESSAGE value="Add Enteties(Export and Address) and fill with dummy data &#10;composer require --dev orm-fixtures -fixtures&#10; &#10;composer require fzaninotto/faker - for dummy data &#10;&#10;https://github.com/fzaninotto/Faker&#10;Changing App/fixtures/AppFixtures.php&#10;Loading Fixtures int DB  php bin/console doctrine:fixtures:load" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Enteties(Export and Address) and fill with dummy data &#10;composer require --dev orm-fixtures -fixtures&#10; &#10;composer require fzaninotto/faker - for dummy data &#10;&#10;https://github.com/fzaninotto/Faker&#10;Changing App/fixtures/AppFixtures.php&#10;Loading Fixtures int DB  php bin/console doctrine:fixtures:load" />
   </component>
 </project>
