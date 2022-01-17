@@ -23,13 +23,15 @@ run `composer install`  to install beede dependencies
 
 run `docker-compse up -d` to start Postgres server
 
-run `symfony server:start -d`
+run  `symfony console cache:clear` to clear the cache
 
 run `php bin/console make:migration`  to create migration files
 
 run `php bin/console make:migration:migrate`  to create tables
 
 run `php bin/console doctrine:fixtures:load' to populate table with dummy data
+
+run `symfony server:start -d` to start http server
 
 
 navigate http://127.0.0.1:8000/exports 
