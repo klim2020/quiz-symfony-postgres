@@ -19,7 +19,7 @@
 
 run `git clone https://github.com/klim2020/quiz-symfony-postgres` to download project
 
-run `composer install`  to install beede dependencies
+run `composer install`  to install  dependencies
 
 run `docker-compse up -d` to start Postgres server
 
