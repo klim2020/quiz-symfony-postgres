@@ -20,4 +20,14 @@ run `docker-compse up -d` to start Postgres server
 
 run `symfony server:start -d`
 
-navigate http://127.0.0.1:8000/exports
+run `php bin/console make:migration`  to create migration files
+
+run `php bin/console make:migration:migrate`  to create tables
+
+run `php bin/console doctrine:fixtures:load' to populate table with dummy data
+
+
+navigate http://127.0.0.1:8000/exports 
+
+
+![alt text](https://i.imgur.com/zvRhBci.png)
