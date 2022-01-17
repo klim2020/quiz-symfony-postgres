@@ -12,7 +12,9 @@ Small quiz to create CRUD App with ability to filter data
 
 *open 8000 and 5432 ports*
 
-run `composer install` to start Postgres server
+run `git clone https://github.com/klim2020/quiz-symfony-postgres` to download project
+
+run `composer install`  to install beede dependencies
 
 run `docker-compse up -d` to start Postgres server
 
