@@ -10,6 +10,9 @@
 </style>
 
 <div class="example-wrapper">
+    {% if form %}
+    {{ form(form, {'attr': {'class': 'task_field'}}) }}
+    {% endif %}
     <h1>Export Table Output</h1>
     <table class="rtable">
         <thead>

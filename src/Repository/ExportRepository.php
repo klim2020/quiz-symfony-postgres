@@ -19,32 +19,31 @@ class ExportRepository extends ServiceEntityRepository
         parent::__construct($registry, Export::class);
     }
 
-    // /**
-    //  * @return Export[] Returns an array of Export objects
-    //  */
-    /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('e')
-            ->andWhere('e.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('e.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
 
-    /*
-    public function findOneBySomeField($value): ?Export
-    {
-        return $this->createQueryBuilder('e')
-            ->andWhere('e.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
+    function findUsingFormFilterData($filterdata){
+        //if location have been selected
+        if ($filterdata['location'] != 0 ) {
+            $res = $this->createQueryBuilder('e')
+                ->andWhere('e.Data BETWEEN :from AND :to')
+                ->andWhere('l.id = :loc')
+                ->leftJoin('e.Location', 'l')
+                ->setParameter('from', new \DateTime($filterdata['from']->format("Y-m-d")))
+                ->setParameter('to', new \DateTime($filterdata['To']->format("Y-m-d")))
+                ->setParameter('loc', $filterdata['location'])
+                ->getQuery()
+                ->getResult();
+        }else {
+            //if not
+            $res = $this->createQueryBuilder('e')
+                ->andWhere('e.Data BETWEEN :from AND :to')
+                ->leftJoin('e.Location', 'l')
+                ->setParameter('from', new \DateTime($filterdata['from']->format("Y-m-d")))
+                ->setParameter('to', new \DateTime($filterdata['To']->format("Y-m-d")))
+                ->getQuery()
+                ->getResult();
+        }
+
+        return $res;
     }
-    */
+
 }
