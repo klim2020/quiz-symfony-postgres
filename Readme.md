@@ -18,6 +18,6 @@ run `composer install`  to install beede dependencies
 
 run `docker-compse up -d` to start Postgres server
 
-run `symfony server:start`
+run `symfony server:start -d`
 
 navigate http://127.0.0.1:8000/exports
