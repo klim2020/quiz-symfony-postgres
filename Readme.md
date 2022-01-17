@@ -29,7 +29,7 @@ run `php bin/console make:migration`  to create migration files
 
 run `php bin/console make:migration:migrate`  to create tables
 
-run `php bin/console doctrine:fixtures:load' to populate table with dummy data
+run `php bin/console doctrine:fixtures:load` to populate table with dummy data
 
 run `symfony server:start -d` to start http server
 
